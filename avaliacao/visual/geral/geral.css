@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: red;
+    text-align: center;
+}
+#content{
+    display: grid;
+    justify-content: center;
+}
+#content button{
+    margin-top: 2vmin;
+    width: 100%;
+}
+
+#content input{
+    margin-top: 2vmin;
+}

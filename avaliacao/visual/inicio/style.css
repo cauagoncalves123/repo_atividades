@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+
+#jesus img{
+    width: 50vmin;
+}
+
+#nome{
+    color: red;
+}
+
+a{
+    color: red;
+}
+
+#link-imagem{
+    margin-top: 4vmin;
+}
+
+#links{
+    margin-top: 4vmin;
+}
