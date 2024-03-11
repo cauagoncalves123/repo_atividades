@@ -1,0 +1,93 @@
+@font-face {
+    font-family: comicsans;
+    src: url(./font/COMIC.TTF);
+}
+
+html{
+    height: 100%;
+    font-family: comicsans;
+    
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-image: url(../img/tibia.png);
+    display: flex;
+    height: 35vmin;
+    background-color: black;
+}
+
+#name{
+    color: white;
+    width: 33%;
+}
+
+#name-text{
+    margin-left: 2vmin;
+}
+
+#page-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 33%;
+    text-align: center;
+    font-size: 15pt;
+}
+
+#menu{
+    height: 8vmin;
+    display: flex;
+    width: 33%;
+    justify-content: right;
+    align-items: center;
+    color: white;
+
+}
+
+#menu-logo{
+    margin: 0;
+    margin-left: 1vmin;
+    width: 20px;
+    height: fit-content;
+}
+
+#search-logo{
+    margin: 0;
+    margin-left: 3vmin;
+    width: 25px;
+    height: fit-content;
+}
+
+
+.images .row1{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.images .row2{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img{
+    margin: 1vmin;
+    margin-top: 3vmin;
+    width: 20vmin;
+}
+.images h3{
+    margin: 1vmin;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
