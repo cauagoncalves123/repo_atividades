@@ -1,0 +1,43 @@
+.pagina {
+    margin-top:3vmin;
+    margin-bottom:3vmin;
+    height:80%;
+    width:90%;
+}
+
+.div_placeholder,.pagina {
+    background-color:blue;
+}
+
+.linha {
+    gap: 10%;
+    height:32%;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    margin-top:3vmin;
+    margin-bottom:3vmin;
+    background-color:yellow;
+    width:80%;
+    height:90%;
+}
+
+.div_quadrada,.div_ancora,.top_div {
+    width: 20%;
+}
+
+.top_div {
+    height:100%;
+    margin-bottom:0%;
+}
+
+.div_ancora {
+    margin-top:0%;
+    height: 100%;
+}
+
+.dois_quadrados {
+    width: 50%;
+}
