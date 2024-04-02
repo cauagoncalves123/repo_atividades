@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário em HTML</title>
+  <style>
+    html{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body{
+        background-color: rgb(239, 239, 255);
+    }
+    section{
+        border-radius: 25px;
+        background-color: rgb(43, 43, 43);
+        border: 2px solid black;
+        color: white;
+        padding-top: 1vmin;
+        margin-top: 10px;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5); 
+    }
+    div{
+        display: block;
+        padding-left: 4.5vmin;
+        padding-bottom: 2vmin;
+        button{
+            margin: 1vmin;
+        }
+        code{
+            color: rgb(255, 182, 182);
+        }
+    }
+  </style>
+</head>
+
+<body>
+    <section>
+       <div>
+            <h1>Formulário em HTML</h1>
+            <p>Um formulário em HTML é uma maneira fácil de coletar informações de usuários. Ele é delimitado por um elemento <code>&lt;form&gt;</code> e pode conter vários elementos <code>&lt;input&gt;</code> e outros controles.</p>
+        </div> 
+    </section>
+    
+    <section>
+        <div>
+            <h2>Como funciona o container form?</h2>
+            <p>O elemento <code>&lt;form&gt;</code> é o "container" do formulário. Ele agrupa todos os elementos de entrada e define o método de envio de dados (GET ou POST).</p>
+            <p>Aqui está um exemplo simples:</p>
+            <h2>Código:</h2>
+            <pre><code>
+    &lt;form&gt;
+        &lt;p&gt;
+            &lt;label for="name"&gt;Nome:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name"&gt;
+            &lt;br&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email"&gt;
+            &lt;br&gt;
+        &lt;/p&gt;  
+        &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+    &lt;/form&gt;
+            </code></pre>
+            <h2>Resultado: </h2>
+            <form>
+                <p>
+                    <!-- Bota um nome para campo de texto -->
+                    <label for="name">Nome:</label>
+                    <!-- Bota um campo de texto -->
+                    <input type="text" id="name" name="name">
+                    <br>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <!-- Bota um campo de E-mail -->
+                    <input type="email" id="email" name="email">
+                    <br>
+                </p>
+                
+                <!-- Bota um botão de enviar -->
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <section>
+        <div>
+            <h2>Quais os tipos de input?</h2>
+            <p>Existem vários tipos de entrada em HTML, cada um com um propósito diferente. Alguns dos tipos mais comuns são:</p>
+            <ul>
+                <li><code>text</code>: caixa de texto simples</li>
+                <li><code>email</code>: caixa de texto para entrada de e-mail</li>
+                <li><code>password</code>: caixa de texto para entrada de senha</li>
+                <li><code>number</code>: caixa de texto para entrada de número</li>
+                <li><code>checkbox</code>: caixa de seleção</li>
+                <li><code>radio</code>: botões de opção</li>
+                <li><code>submit</code>: botão de envio do formulário</li>
+            </ul>
+            <p>Aqui está um exemplo de como usar alguns desses tipos:</p>
+            <h2>Código:</h2>
+            <pre><code>
+    &lt;form&gt;
+        &lt;p&gt;
+        &lt;label for="name"&gt;Nome:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+        &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+        &lt;label for="pwd"&gt;Senha:&lt;/label&gt;
+        &lt;input type="password" id="pwd" name="pwd"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+        &lt;input type="checkbox" id="newsletter" name="newsletter" value="yes"&gt;
+        &lt;label for="newsletter"&gt;Desejo receber newsletter&lt;/label&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+        &lt;label for="gender"&gt;Gênero:&lt;/label&gt;
+        &lt;label for="male"&gt;Masculino&lt;/label&gt;
+        &lt;input type="radio" id="male" name="gender" value="male"&gt;
+        &lt;label for="female"&gt;Feminino&lt;/label&gt;
+        &lt;input type="radio" id="female" name="gender" value="female"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+        &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+        &lt;/p&gt;
+    &lt;/form&gt;    
+            </code></pre>
+            <h2>Resultado:</h2>
+            <form>
+                <p>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name">
+                </p>
+                <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+                </p>
+                <p>
+                <label for="pwd">Senha:</label>
+                <input type="password" id="pwd" name="pwd">
+                </p>
+                <p>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Desejo receber newsletter</label>
+                </p>
+                <p>
+                <label for="gender">Gênero:</label>
+                <label for="male">Masculino</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Feminino</label>
+                <input type="radio" id="female" name="gender" value="female">
+                </p>
+                <p>
+                <button type="submit">Enviar</button>
+                </p>
+            </form>
+        </div>
+    </section>
+    
+    <section>
+        <div>
+            <h2>Como funciona o post em HTML?</h2>
+            <p>O método POST é usado para enviar dados para o servidor. Quando um formulário com o método POST é submetido, os dados são enviados no corpo da solicitação HTTP e não são exibidos na URL. Isso torna o método POST mais seguro do que o método GET.</p>
+            <p>Aqui está um exemplo de como usar o método POST:</p>
+            <h2>Código:</h2>
+            <pre><code>
+    &lt;form action="http://example.com/submit" method="post"&gt;
+
+        &lt;input type="text" name="nome" value="Seu nome aqui"&gt;
+
+        &lt;input type="submit" value="Enviar"&gt;
+
+    &lt;/form&gt;  
+            </code></pre>
+            <h2>Resultado:</h2>
+            <form action="http://example.com/submit" method="post">
+                <input type="text" name="nome" value="Seu nome aqui">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>
