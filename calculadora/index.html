@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="cell">
+            <form action="#" method="post">
+                <div>
+                    <label for="num1">num1</label>
+                    <input type="number" id="num1" name="num1" required>
+                </div>
+
+                <div>
+                    <label for="num2">num2</label>
+                    <input type="number" id="num2" name="num2" required>
+                </div>
+
+                <div>
+                    <label for="op">operacao:</label>
+                    <select id="op" name="op">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="x">x</option>
+                        <option value=":">:</option>
+                    </select>
+                </div>
+
+
+                <br>
+
+                <div>
+                    <button id="process" type="button" onclick="calculate()">calcular</button>
+                </div>
+            </form>
+            <div>
+                <h1>Resposta:</h1>
+                <h1 id="resposta"></h1>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
